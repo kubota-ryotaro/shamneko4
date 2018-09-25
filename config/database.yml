@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: shamneko_production
-  username: shamneko
-  password: <%= ENV['SHAMNEKO_DATABASE_PASSWORD'] %>
+  database: shamneko4_production
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
